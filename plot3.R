@@ -13,7 +13,7 @@ pwrCon$Sub_metering_2<-as.numeric(as.character(pwrCon$Sub_metering_2))
 pwrCon$Sub_metering_3<-as.numeric(as.character(pwrCon$Sub_metering_3))
 
 
-png(filename="plot3.png",width=480,height=480)
+png(filename="plot3.png",width=480,height=480,bg="transparent")
 with(pwrCon, {
         plot(DateTime,Sub_metering_1,type="l",col="black",xlab="",ylab="Energy sub metering")
         lines(DateTime,Sub_metering_2,type="l",col="red")

@@ -9,7 +9,7 @@ pwrCon$Date<-as.Date(pwrCon$Date,format="%d/%m/%Y")
 pwrCon$DateTime<-strptime(paste(pwrCon$Date,pwrCon$Time),format="%Y-%m-%d %H:%M:%S")
 
 ### Plot and save the file as png
-png(filename="plot2.png",width=480,height=480)
+png(filename="plot2.png",width=480,height=480,bg="transparent")
 plot(pwrCon$DateTime,pwrCon$Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="")
 dev.off()
 

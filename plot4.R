@@ -15,7 +15,7 @@ pwrCon$Sub_metering_3<-as.numeric(as.character(pwrCon$Sub_metering_3))
 pwrCon$Global_reative_power<-as.numeric(as.character(pwrCon$Global_reactive_power))
 pwrCon$Voltage<-as.numeric(as.character(pwrCon$Voltage))
 
-png(filename="plot4.png",width=480,height=480)
+png(filename="plot4.png",width=480,height=480,bg="transparent")
 par(mfrow = c(2, 2))
 with(pwrCon, {
         plot(DateTime,Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="")
